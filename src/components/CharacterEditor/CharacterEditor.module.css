@@ -37,7 +37,7 @@
   width: 100%;
   margin-bottom: 16px;
   margin-top: -400px;
-  order: 1;
+  order: 0;
 }
 
 .characterWrapper>* {
@@ -57,7 +57,7 @@
 }
 
 .controlColumnScroll {
-  order: 2;
+  order: 1;
   margin-inline: -32px;
   position: sticky;
   overflow-x: scroll;
@@ -118,7 +118,7 @@
     flex: none;
     overflow: visible;
     margin-inline: 0;
-    order: 1;
+    order: 0;
   }
 
   .controlColumn>* {
@@ -135,10 +135,12 @@
     position: sticky;
     top: 48px;
     align-self: flex-start;
-    order: 2;
+    order: 1;
+    margin-left: 48px;
+    margin-top: -192px;
   }
 
   .characterWrapper > * {
-    width: 110%;
+    width: 125%;
   }
 }
