@@ -29,7 +29,7 @@ function App() {
   );
 
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper className={styles.editorWrapper}>
       <main className={styles.characterEditor}>
         <div className={styles.characterWrapperBackground}></div>
         <header className={styles.header}>

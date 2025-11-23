@@ -1,6 +1,18 @@
+html {
+  height: 100%;
+}
+
 body {
   background-color: hsl(180deg 25% 92%);
   margin: 0;
+  height: 100%;
+}
+
+#root {
+  /* This serves as a primary scroll container for the page */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   overflow-x: hidden;
 }
 

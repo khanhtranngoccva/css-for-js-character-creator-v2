@@ -2,11 +2,14 @@ import React from 'react';
 
 import CharacterEditor from './components/CharacterEditor';
 import Footer from './components/Footer';
+import styles from './App.module.css';
 
 function App() {
   return (
     <>
-      <CharacterEditor />
+      <div className={styles.stretch}>
+        <CharacterEditor />
+      </div>
       <Footer />
     </>
   );

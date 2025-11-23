@@ -1,0 +1,4 @@
+/* flex grow in a bounded-height flexbox without overflow: hidden will not be shrunk to fit */
+.stretch {
+    flex: 1;
+}
