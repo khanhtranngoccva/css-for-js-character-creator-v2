@@ -16,7 +16,7 @@
 .title {
   margin: 0;
   /* Optical centering */
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   left: 0;
 }
 
@@ -30,7 +30,7 @@
 .buttonRowScroll {
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 12px;
+  padding-bottom: 18px;
   padding-inline: 24px;
   margin-inline: -24px;
   margin-bottom: -24px;
