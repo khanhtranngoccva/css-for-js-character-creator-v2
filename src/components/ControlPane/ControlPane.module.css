@@ -9,13 +9,15 @@
     a little gross, but we haven't seen the tools
     to deal with it yet!
   */
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
+
 }
 
 .title {
   margin: 0;
   /* Optical centering */
-  margin-bottom: -4px;
+  margin-bottom: 8px;
+  left: 0;
 }
 
 .metadata {
@@ -24,3 +26,11 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
+
+.buttonRowScroll {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 12px;
+}
+

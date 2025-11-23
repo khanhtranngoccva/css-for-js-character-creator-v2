@@ -1,13 +1,23 @@
 .characterEditor {
   padding-top: 128px;
-  padding-bottom: 64px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
-.maxWidthWrapper {
+.characterEditorContent {
+  display: flex;
+  flex-direction: column;
+  /* Quirk: editor content's top padding reserves space 
+    that prevents sticky content from overlapping - this is 
+    useful as we want a gap to always show the head of 
+    the character. */
+  padding-top: 400px;
 }
 
 .header {
   padding-bottom: 64px;
+  order: 0;
 }
 
 .title {
@@ -24,7 +34,107 @@
 }
 
 .characterWrapper {
+  width: 100%;
+  margin-bottom: 16px;
+  margin-top: -400px;
+  order: 1;
+}
+
+.characterWrapper>* {
+  position: relative;
+  min-height: 500px;
+}
+
+
+.characterWrapperBackground {
+  position: fixed;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background-color: hsl(195deg, 20%, 86%);
+  z-index: -1;
+}
+
+.controlColumnScroll {
+  order: 2;
+  margin-inline: -32px;
+  position: sticky;
+  overflow-x: scroll;
+  bottom: 48px;
+}
+
+.controlColumnScroll::-webkit-scrollbar {
+  appearance: none;
 }
 
 .controlColumn {
+  padding-inline: 32px;
+  width: max-content;
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.controlColumn>* {
+  width: 20rem;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .characterEditor {
+    padding-bottom: 96px;
+  }
+
+  .controlColumn {
+    width: 100%;
+  }
+
+  .controlColumnContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 65%;
+  }
+
+  .characterEditorContent {
+    /* Sticky leeway for control panels are not needed anymore. */
+    padding-top: 0;
+  }
+
+  .characterWrapper {
+    margin-top: 0;
+  }
+
+  .characterEditorContent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .controlColumnScroll {
+    width: 50%;
+    flex: none;
+    overflow: visible;
+    margin-inline: 0;
+    order: 1;
+  }
+
+  .controlColumn>* {
+    width: 100%;
+  }
+
+  .controlColumn {
+    flex-direction: column;
+    gap: 16px;
+    padding-inline: 0;
+  }
+
+  .characterWrapper {
+    position: sticky;
+    top: 48px;
+    align-self: flex-start;
+    order: 2;
+  }
 }
