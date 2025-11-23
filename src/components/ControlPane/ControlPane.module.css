@@ -28,9 +28,11 @@
 }
 
 .buttonRowScroll {
-  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   padding-bottom: 12px;
+  padding-inline: 24px;
+  margin-inline: -24px;
+  margin-bottom: -24px;
 }
 
