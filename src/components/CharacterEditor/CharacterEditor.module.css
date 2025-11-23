@@ -137,4 +137,8 @@
     align-self: flex-start;
     order: 2;
   }
+
+  .characterWrapper > * {
+    width: 110%;
+  }
 }
