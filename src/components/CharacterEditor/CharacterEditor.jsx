@@ -81,16 +81,14 @@ function App() {
             </div>
           </div>
           <div className={styles.characterWrapper}>
-            <div className={styles.characterWrapperInner}>
-              <Character
-                body={body}
-                head={head}
-                face={face}
-                accessory={accessory}
-                skinColor={skinColor}
-                clothesColor={clothesColor}
-              />
-            </div>
+            <Character
+              body={body}
+              head={head}
+              face={face}
+              accessory={accessory}
+              skinColor={skinColor}
+              clothesColor={clothesColor}
+            />
           </div>
         </div>
       </main>

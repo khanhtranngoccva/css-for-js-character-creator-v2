@@ -68,6 +68,7 @@
 .characterWrapper>* {
   position: relative;
   min-height: 500px;
+
 }
 
 .characterWrapperBackground {
@@ -140,10 +141,5 @@
     margin-left: 48px;
     margin-bottom: 0;
     margin-top: -216px;
-  }
-
-  .characterWrapperInner {
-    height: 100%;
-    /* width: 150%; */
   }
 }
